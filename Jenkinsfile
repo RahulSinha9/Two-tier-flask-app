@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     stages{
-        stage("Code"){
+        stage("Code Clone"){
             steps{
                 git url: "https://github.com/LondheShubham153/two-tier-flask-app.git", branch: "jenkins"
             }
