@@ -10,7 +10,7 @@ RUN apt-get update \
     && apt-get install -y gcc default-libmysqlclient-dev pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy the requirements file into the container
+# Copy the requirement file into the container
 COPY requirements.txt .
 
 # Install app dependencies
